@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Canditest</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/index.css">
+
+<script>
+function snackbar() {
+  var snackbar = document.getElementById("snackbar");
+  snackbar.className = "show";
+
+  // After 3 seconds, remove the show class from DIV
+  setTimeout(function(){ snackbar.className = snackbar.className.replace("show", ""); }, 1000);
+}
+</script>
+
+</head>
+<body>
+
+<div class="navbar">
+  <a href="#" class="navbar-brand">Canditest</a>
+  <a href="#" class="selected">Home</a>
+  <a href="about.html" class="nav-link">About Us</a>
+  <a href="https://github.com/furkanturunc" class="right">Github Page &#128279</a>
+</div>
+
+<div class="content">
+    <div style="text-align: center; margin-left: 20%; margin-right: 20%;">
+        CANDITEST
+        <hr>
+        <div style="align-items:center; padding-right: 5%; right: 0;">
+          <p style="text-align:justify;">
+            Canditest is a desktop application that extracts behavioral analysis of the applicants in online interviews.
+            It uses face expression, body language, and eye movements. Applicants are analysed in terms of 
+            whether they cheat by using the external sources along with their mood, level of excitement, and self-confidence. 
+          </p>
+        </div>
+        <hr>
+    </div>
+
+    <div style="padding-top: 5%;">
+      <h1 class="report">Reports</h1>
+      <div class="row">
+        <div class="column">
+          <div>
+            <a href="#" onclick="snackbar()"><img src="images/document-icon.png" alt="pdf" class="document-icon"></a>
+            <p class="file">Project Specification Report</p>
+          </div>
+          
+        </div>
+        <div class="column">
+          <div>
+            <a href="#" onclick="snackbar()"><img src="images/document-icon.png" alt="pdf" class="document-icon"></a>
+            <p class="file">Analysis and Requirements Report</p>
+          </div>
+        </div>
+        <div class="column">
+          <div>
+            <a href="#" onclick="snackbar()"><img src="images/document-icon.png" alt="pdf" class="document-icon"></a>
+            <p class="file">Detailed Design Report</p>
+          </div>
+        </div>
+        <div class="column">
+          <div>
+            <a href="#" onclick="snackbar()"><img src="images/document-icon.png" alt="pdf" class="document-icon"></a>
+            <p class="file">Final Report</p>
+          </div>
+        </div>
+      </div>
+      <div id="snackbar">Not yet uploaded!</div>
+    </div>
+
+    <img src="images/bilkent-amblem.png" alt="bilkentemblem" class="bilkent_emblem">
+    <p style="font-size: 30px; color: black; padding-left: 6%;">Bilkent University</p>
+
+    
+</div>
+
+</body>
+</html>
