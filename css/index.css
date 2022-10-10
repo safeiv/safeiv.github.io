@@ -72,8 +72,10 @@ body {
 
 .bilkent_emblem {
     width:5%;
-    height:5%;
+    height:8%;
     float:left;
+    position: absolute;
+    bottom: 0%;
 }
 
 .row {
